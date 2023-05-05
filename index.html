@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Robot Friend</title>
+	<style type="text/css">
+		.Android{
+			margin-top: 5%;
+		}
+		
+       .head{
+       	background-color: rgba(27, 67, 250, 0.6);
+       	width: 250px;
+       	height: 200px;
+       	margin-bottom: 5px;
+       }
+       .Android{
+       	display: flex;
+       	flex-direction: column;
+       	align-items: center;
+       }
+       .head{
+       	border-radius: 50% 50% 0 0 ;
+       	display: flex;
+       	justify-content:space-around;
+       	align-items: flex-end;
+       	transition: all 1s;
+       }
+       .head .eye{
+       	position: relative;
+       	background-color: white;
+       	width: 20px;
+       	height: 20px;
+       	margin-bottom: 20%;
+       	border-radius: 50%;
+
+       }
+       .upper_body{
+       	width: 400px;
+       	height: 250px;
+       	display: flex;
+       	justify-content: space-between;
+       	flex-direction: row;
+
+
+       }
+       .upper_body .middle{
+       	width: 250px;
+       	height: 250px;
+       	background-color:rgba(27, 67, 250, 0.6);
+       	border-radius: 0 0 3rem 3rem;
+       }
+       .upper_body .hand{
+       	width: 50px;
+       	height: 150px;
+       	background-color: rgba(27, 67, 250, 0.6);
+       	border-radius: 2rem;
+       	transition: all 1s;
+       }
+       .upper_body .hand:hover{
+       	transform: rotate(20deg);
+       }
+
+       .lower_body{
+       	width: 150px;
+       	height: 100px;
+       	display: flex;
+       	justify-content: space-between;
+       }
+       .head:hover{
+       	transform: scaleX(1.2);
+       	justify-content: flex-start;
+       	align-items: center;
+       }
+       .lower_body .leg{
+       	width: 50px;
+       	height: 100px;
+       	background-color: rgba(27, 67, 250, 0.6);
+       	border-radius: 0 0 3rem 3rem;
+       	transition: all 1s;
+       }
+       .lower_body .leg:hover{
+       	transform: rotate(20deg);
+       	margin-top: -10%;
+       }
+
+
+	</style>
+</head>
+<body>
+	<div class="Android">
+		<div class="head">
+			<div class="eye"></div>
+			<div class="eye"></div>
+		</div>
+		<div class="upper_body">
+			<div class="hand"></div>
+			<div class="middle"></div>
+			<div class="hand"></div>
+		</div>
+		<div class="lower_body">
+			<div class="leg"></div>
+			<div class="leg"></div>
+		</div>
+	</div>
+
+</body>
+</html>
